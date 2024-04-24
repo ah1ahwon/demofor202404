@@ -1,2 +1,20 @@
-package com.example.demo.dto;public class TodoDTO {
+package com.example.demo.dto;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class TodoDTO {
+
+    private Long tno;
+
+    private String title;
+
+    private boolean complete;
 }
